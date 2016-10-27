@@ -21,8 +21,12 @@
         document.getElementById("demo").innerHTML = "Paragraph changed.";
     }
     
+    function testButton() {
+      alert('PASS');
+    }
+    
     var guessSubmit = document.querySelector('.guessSubmit');
-    guessSubmit.addEventListener('click', function() { alert('hello'); });
+    guessSubmit.addEventListener('click', testButton);
     
   </script>
 </div>
