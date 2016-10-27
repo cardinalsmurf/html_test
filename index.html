@@ -10,10 +10,19 @@
   <p id="demo">A Paragraph.</p>
 
   <button type="button" onclick="myFunction()">Try it</button>
+  
+  <div class="form">
+    <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
+    <input type="submit" value="Submit guess" class="guessSubmit">
+  </div>
 
   <script>
-  function myFunction() {
-      document.getElementById("demo").innerHTML = "Paragraph changed.";
-  }
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+    
+    var guessSubmit = document.querySelector('.guessSubmit');
+    guessSubmit.addEventListener('click', function() { alert('hello'); });
+    
   </script>
 </div>
